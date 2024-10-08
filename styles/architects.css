@@ -1,0 +1,153 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* shared styles */
+.btn-primary {
+    border: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* header starts */
+/* nav related styles */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a {
+    color: #424242;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 1rem;
+}
+
+/* banner related styles */
+.banner {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.banner-title {
+    color: var(--Dark-01, #131313);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-despt {
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header>img {
+    max-height: 700px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* header section end */
+
+/* feature section starts */
+.feature {
+    margin: 80px 300px 0px 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.feature-image img {
+    max-height: 340px;
+    max-width: 340px;
+    border-radius: 8px;
+}
+
+.feature-despt {
+    align-content: center;
+}
+
+.feature-title {
+    margin: 0;
+    max-width: 468px;
+    color: var(--Dark-03, #727272);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+#feature-title-des-1 {
+    color: var(--Dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#feature-title-des-2 {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.feature-message {
+    padding: 10px 0;
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
