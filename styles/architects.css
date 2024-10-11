@@ -5,6 +5,11 @@ body {
 }
 
 /* shared styles */
+.text-light-gray {
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+}
 .btn-primary {
     border: 0;
     border-radius: 8px;
@@ -66,11 +71,7 @@ nav li a {
     font-weight: 700;
 }
 
-.banner-despt {
-    color: var(--Dark-03, #727272);
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 
 header>img {
     max-height: 700px;
@@ -79,57 +80,40 @@ header>img {
 }
 
 /* header section end */
+/* main related styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
 
 /* feature section starts */
-.feature {
-    margin: 80px 300px 0px 300px;
+
+.feature{
     display: flex;
-    justify-content: space-between;
-    gap: 75px;
+    align-items: center;
 }
 
-.feature-image {
+.feature-image{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 1.5rem;
 }
-
-.feature-image img {
-    max-height: 340px;
-    max-width: 340px;
-    border-radius: 8px;
+.feature-despt{
+    padding-left: 70px;
+    padding-right: 70px;
 }
-
-.feature-despt {
-    align-content: center;
-}
-
-.feature-title {
-    margin: 0;
-    max-width: 468px;
-    color: var(--Dark-03, #727272);
+.feature-title{
     font-size: 2.8rem;
+}
+.feature-title .text-quick-list{
+    color: #727272;
     font-weight: 500;
 }
-
-#feature-title-des-1 {
-    color: var(--Dark-01, #131313);
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-
-#feature-title-des-2 {
+.feature-title .text-feature{
     color: #FF900E;
-    font-size: 2.8rem;
     font-weight: 700;
 }
 
-.feature-message {
-    padding: 10px 0;
-    color: var(--Dark-03, #727272);
-    font-size: 1rem;
-    font-weight: 400;
-}
 
 
 @media screen and (max-width: 576px) {
@@ -137,8 +121,17 @@ header>img {
         padding: 20px;
     }
 
-    nav {
+    nav, .feature {
         flex-direction: column;
+    }
+    .feature-image{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .feature-despt{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
     }
 }
 
@@ -147,7 +140,7 @@ header>img {
         padding: 20px;
     }
 
-    nav {
+    nav, .feature {
         flex-direction: column;
     }
 }
