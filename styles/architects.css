@@ -150,8 +150,12 @@ main {
     padding: 40px;
     text-align: center;
     width: 342px;
+    position: relative;
+    top: -120px;
+    left: -100px;
 }
-.years h2{
+
+.years h2 {
     font-size: 4rem;
     margin: 0;
 }
@@ -197,6 +201,20 @@ main {
     margin-top: 50px;
 }
 
+footer {
+    margin-top: 100px;
+}
+
+footer p {
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    color: var(--Dark-02, #424242);
+font-size: 1.2rem;
+font-weight: 400;
+}
+
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
@@ -209,10 +227,20 @@ main {
         flex-direction: column;
     }
 
+    .main-feature-image img {
+        width: 100%;
+    }
+
+    .main-feature-image .years {
+        position: static;
+        width: 300px;
+    }
+
     .feature-image {
         display: grid;
         grid-template-columns: 1fr;
     }
+
 
     .feature-despt {
         padding-left: 20px;
@@ -238,7 +266,12 @@ main {
     }
 
     nav,
-    .feature {
+    .feature,
+    .main-feature {
         flex-direction: column;
+    }
+
+    .years {
+        position: static;
     }
 }
